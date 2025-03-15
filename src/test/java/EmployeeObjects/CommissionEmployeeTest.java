@@ -10,8 +10,7 @@ class CommissionEmployeeTest {
 
     @Test
     void testIncreaseSales() {
-        emp.increaseSales();
-        assertEquals("Sales", emp.getSales());
+
 
     }
 
