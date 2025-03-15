@@ -5,15 +5,19 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 class HourlyEmployeeTest {
 
+    // example object
+    HourlyEmployee emp = new HourlyEmployee("Tony", "Stark", 5749, "Service", "Lead Service Manager", 32.85);
+
     @Test
-    void increaseHours() {
+    void testincreaseHours() {
+
     }
 
     @Test
-    void calculateWeeklyPay() {
+    void testCalculateWeeklyPay() {
     }
 
     @Test
-    void annualRaise() {
+    void testAnnualRaise() {
     }
 }
