@@ -29,6 +29,7 @@ public final class HourlyEmployee extends Employee {
         hoursWorked = 0.0;
     }
 
+
     /**
      * adds 1 to hours worked by default
      */
@@ -128,5 +129,8 @@ public final class HourlyEmployee extends Employee {
     public void setPay(double pay)
     {
         wage = pay;
+    }
+
+    public void setHoursWorked(int i) {
     }
 }
