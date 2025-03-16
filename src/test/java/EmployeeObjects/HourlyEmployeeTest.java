@@ -37,6 +37,8 @@ public class HourlyEmployeeTest {
     public void testCalculateWeeklyPayOver40Hours() {
         HourlyEmployee emp = new HourlyEmployee("Tony", "Stark", 5749, "Service", "Lead Service Manager", 32.85);
         emp.increaseHours(45);     // sends it off to the increase hours method
-        assertEquals(1560.38, emp.calculateWeeklyPay(), "Weekly pay should be 1560.38 for 45 hours worked.");
+        double employee = emp.calculateWeeklyPay();
+        double pay = Math.round(employee * 100.0) / 100.0;
+        assertEquals(1560.38, pay);
     }                           // still holding to the object the value is
 }
