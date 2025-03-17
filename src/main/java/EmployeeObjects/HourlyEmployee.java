@@ -73,7 +73,7 @@ public final class HourlyEmployee extends Employee {
     @Override
     public double calculateWeeklyPay() {
         double pay = wage * hoursWorked;
-        if (hoursWorked > 40) {
+        if (hoursWorked > 40) {                             // added the additional else if to method
             pay = wage * 40 + (wage * 1.5) * (hoursWorked - 40);
         } else if (hoursWorked < 40) {
             pay = wage * 40 + (wage * 1.25) * (hoursWorked - 40);

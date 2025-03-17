@@ -17,7 +17,7 @@ public class HourlyEmployeeTest {
         HourlyEmployee emp = new HourlyEmployee("Tony", "Stark", 5749, "Service", "Lead Service Manager", 32.85);
         emp.increaseHours(-3);
         assertEquals(0, emp.getHoursWorked());
-    }
+    }    // zero is pulled from the field if the condition(not a postive) is not meet
 
     @Test
     public void testAnnualRaise() {

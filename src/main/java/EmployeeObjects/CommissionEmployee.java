@@ -9,7 +9,8 @@ import EmployeeBlueprints.EmployeeType;
  * @version 1.0.1
  */
 public final class CommissionEmployee extends Employee {
-    
+
+
     private double sales;
     private double rate;
 
@@ -32,19 +33,24 @@ public final class CommissionEmployee extends Employee {
     /**
      * Increases the sales by 100 as a default.
      */
-    public void increaseSales()
+    public double increaseSales()
     {
         sales += 100.0;
+        return sales;
     }
 
     /**
      * Increases the sales by sent amount 's'. Makes sure 's' is positive.
      * @param s double for the sales to add
      */
-    public void increaseSales(double s)
+    public double increaseSales(double s)
     {
-        sales += s;
+        if (sales > 0)
+            sales += s ;     // added if statement to have only non negative amounts added
+        return sales;
     }
+
+
 
     /**
      * Returns back the sales
@@ -61,6 +67,11 @@ public final class CommissionEmployee extends Employee {
     public double getRate() {
         return rate;
     }
+
+    public double setRate(double v){
+        return rate;
+    }
+
 
     /**
      * Calculates the employee's pay. rate * sales
@@ -98,6 +109,9 @@ public final class CommissionEmployee extends Employee {
     public void resetWeek()
     {
         sales = 0.0;
+    }
+    public double setSales(double s){
+        return s;
     }
 
     /**
