@@ -11,8 +11,7 @@ class SalaryEmployeeTest {
 
     void testCalculateWeeklyPay() {
     SalaryEmployee emp = new SalaryEmployee("Steve", "Rodgers", 3781, "Sales", "Manager", 64325);
-    double amount = emp.calculateWeeklyPay();
-    assertEquals(1237.02, amount);
+    assertEquals(1237.02, emp.calculateWeeklyPay());
     }
 
     @Test
