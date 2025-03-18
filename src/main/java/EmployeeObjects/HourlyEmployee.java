@@ -29,6 +29,10 @@ public final class HourlyEmployee extends Employee {
         hoursWorked = 0.0;
     }
 
+    public HourlyEmployee() {
+
+    }
+
 
     /**
      * adds 1 to hours worked by default

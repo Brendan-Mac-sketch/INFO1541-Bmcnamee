@@ -13,7 +13,7 @@ public final class CommissionEmployee extends Employee {
 
 
     private double sales;
-
+    @payRate(type = "String")
     private double rate;
 
     /**
@@ -30,6 +30,10 @@ public final class CommissionEmployee extends Employee {
         super(fn, ln, en, dept, job, EmployeeType.COMMISSION);
         rate = r;
         sales = 0.0;
+    }
+
+    public CommissionEmployee() {
+
     }
 
     /**

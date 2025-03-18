@@ -8,7 +8,6 @@ import static org.junit.jupiter.api.Assertions.*;
 class SalaryEmployeeTest {
 
     @Test
-
     void testCalculateWeeklyPay() {
     SalaryEmployee emp = new SalaryEmployee("Steve", "Rodgers", 3781, "Sales", "Manager", 64325);
     assertEquals(1237.02, emp.calculateWeeklyPay());

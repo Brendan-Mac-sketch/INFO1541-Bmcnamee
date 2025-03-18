@@ -29,6 +29,10 @@ public final class SalaryEmployee extends Employee {
         salary = s;
     }
 
+    public SalaryEmployee() {
+
+    }
+
     /**
      * Calculates the weekly pay of the employee. salary/52
      * @return double for the weekly pay
